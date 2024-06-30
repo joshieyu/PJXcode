@@ -32,3 +32,4 @@ packaging/Output/*
 # added ignores
 .vs/
 out/
+build/

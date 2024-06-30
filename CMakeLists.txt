@@ -143,14 +143,14 @@ target_link_libraries(SharedCode
 # Link the JUCE plugin targets our SharedCode target
 target_link_libraries("${PROJECT_NAME}" PRIVATE SharedCode)
 
-# IPP support, comment out to disable
-include(PamplejuceIPP)
+# # IPP support, comment out to disable
+# include(PamplejuceIPP)
 
-# Everything related to the tests target
-include(Tests)
+# # Everything related to the tests target
+# include(Tests)
 
-# A separate target keeps the Tests target fast!
-include(Benchmarks)
+# # A separate target keeps the Tests target fast!
+# include(Benchmarks)
 
-# Pass some config to GA (like our PRODUCT_NAME)
-include(GitHubENV)
+# # Pass some config to GA (like our PRODUCT_NAME)
+# include(GitHubENV)
